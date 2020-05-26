@@ -3,6 +3,7 @@ import { Input, ButtonConversor } from "src/styles/components";
 //import { useTheme } from "src/ThemeContext";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDoubleRight} from "@fortawesome/free-solid-svg-icons";
+import ListarMoedas from "src/component";
 
 export default function Home() {
  // const themeToggle = useTheme();
@@ -15,15 +16,11 @@ export default function Home() {
        <form action="">
        <Input type="text" placeholder="0" value={1} required/>
        <Input type="text" as="select" >
-         <option value="1">Teste</option>
-         <option value="2">Teste1</option>
-         <option value="3">Teste1</option>
+        <ListarMoedas/>
          </Input>
          <FontAwesomeIcon icon={faAngleDoubleRight} />
          <Input type="text" as="select" >
-         <option value="1">Teste</option>
-         <option value="2">Teste1</option>
-         <option value="3">Teste1</option>
+         <ListarMoedas/>
          </Input>
          <ButtonConversor type="submit"> Converter </ButtonConversor>
        </form>
